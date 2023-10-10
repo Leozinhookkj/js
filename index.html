@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+      alert("Olá galera!");
+
+      function TrocarFrase() {
+        var FraseAtual = document.getElementById("frase");
+        FraseAtual.innerHTML = "funcionou, a frase mudou!";
+        FraseAtual.style.color = "red";
+        FraseAtual.style.fontSize = "25px";
+        FraseAtual.style.backgroundColor = "yellow";
+        document.body.style.backgroundColor = "blue";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="frase" onmouseover="TrocarFrase()">Olá Mundo!</h1>
+  </body>
+</html>
