@@ -1,6 +1,8 @@
 <html>
     <head>
         <script>
+
+            function trabalhandoNome(){
             var nome = prompt("Diga um nome", "Leonardo")
             var sobrenome = prompt("Diga um sobrenome", "Carminatti")
             var nomeCompleto = nome + " " +sobrenome
@@ -11,9 +13,12 @@
             var retorno = confirm("Seu nome é: " + nomeCompleto + "?")
             if(retorno){
                 console.log("beleza!")
+                document.write("confirmado o nome")
             }else{
                 console.log("Ixi, deu ruim!")
+                document.write("Errou o nome")
             }
+        }
         </script>
     </head>
     <body>
