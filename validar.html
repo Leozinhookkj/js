@@ -7,6 +7,13 @@
             var tamanhoDoNome = nomeCompleto.length
             alert("["  + nomeCompleto + "]" +
             "\n" + " com tamanho = " + tamanhoDoNome)
+
+            var retorno = confirm("Seu nome é: " + nomeCompleto + "?")
+            if(retorno){
+                console.log("beleza!")
+            }else{
+                console.log("Ixi, deu ruim!")
+            }
         </script>
     </head>
     <body>
