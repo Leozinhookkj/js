@@ -22,14 +22,25 @@
         function trabalhandoNúmeros() {
             var num1 = prompt("diga um número")
             var num2 = 5
-            var total = parseInt (num1) + num2 
+            var total = parseFloat(num1) + num2 
             alert("total = " + total)
         }
 
             trabalhandoNúmeros()
         </script>
+        <script type="text/javascript" src="js/myscript.js"> </script>
     </head>
     <body>
+        <center>
         <h1>Validar</h1>
+            <form>
+                <fieldset align="center" style="width: 270px;">
+                    <legend>Login:</legend>
+                    Email: <input id="idEmail" type="text" onblur="maiuscula();"><br>
+                    Senha: <input id="idSenha" type="password"><br>
+                    <input type="button" value="Enviar" onclick="validar();">
+                </fieldset>
+            </form>
+        </center>
     </body>
 </html>
