@@ -6,8 +6,12 @@
     <title>Titulo</title>
     <script>
         function contar() {
-            for (var i =0;1 < 11; i++)
-            document.write(i + "<br>")
+            var soma = 0
+            for (var i =0; i < 11; i++) {
+            document.write(i + " " + soma + "<br>")
+            soma = soma + i
+            }
+            document.write("soma final = " + soma + "<br>") 
         }
     </script>
 </head>
