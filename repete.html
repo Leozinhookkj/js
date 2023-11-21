@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo</title>
     <script>
         function contar() {
-            var soma = 0
-            for (var i =0; i < 11; i++) {
-            document.write(i + " " + soma + "<br>")
-            soma = soma + i
+            var numeros = [9, 21, 7, 15];
+            var cars = ["BMW", "VOLVO", "Saab", "Ford", "Fiat", "Audi", "abobrinha"];
+
+            for (let index = 0; index < cars.length; index++) {
+                const element = cars[index];
+                document.write(element + "<br>")
             }
-            document.write("soma final = " + soma + "<br>") 
         }
     </script>
 </head>
+
 <body>
     <input type="button" value="Enviar" onclick="contar();">
 </body>
+
 </html>
